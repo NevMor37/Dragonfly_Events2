@@ -1,0 +1,28 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /assets
+  static_dir: assets
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /maps
+  static_dir: maps
+
+- url: /scripts
+  static_dir: scripts
+
+- url: /styles
+  static_dir: styles
+
+- url: /.*
+  static_files: index.html
+  upload: index.html
+
+- url: /
+  static_files: index.html
+  upload: index.html
+
